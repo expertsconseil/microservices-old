@@ -1,0 +1,23 @@
+logging:
+  level:
+    root: info
+server:
+  port: 8081
+spring:
+  application:
+    name: user-microservice
+  profiles:
+    active:
+      - dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:8089
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health, metrics'
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

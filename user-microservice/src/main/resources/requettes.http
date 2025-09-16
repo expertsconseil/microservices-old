@@ -1,0 +1,7 @@
+GET http://localhost:8084/v1/users/
+
+###
+
+GET http://localhost:8084/v1/users/7b849a22-0356-4a1b-8cde-e946a2ab0b8d
+
+###
