@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 @Getter
 @Setter
 @NoArgsConstructor
-public class CustumUserDetails implements UserDetails {
+public class  CustumUserDetails implements UserDetails {
 
     private String username;
     private String password;

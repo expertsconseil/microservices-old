@@ -37,6 +37,7 @@ public class SecurityConfig {
         return http
                 .authorizeExchange(exchanges -> exchanges
                         .pathMatchers(HttpMethod.POST,"/login").permitAll()
+                        //.pathMatchers(HttpMethod.POST,"/user").permitAll()
                         .pathMatchers("/v3/api-docs/**").permitAll()
                         .pathMatchers("/swagger-ui/**").permitAll()
                         .pathMatchers("/swagger-resources/**").permitAll()
